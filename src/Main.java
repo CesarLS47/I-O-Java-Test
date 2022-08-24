@@ -1,7 +1,7 @@
-import Escribiendo_por_caracteres.Escribir_Fichero;
-import Leyendo_por_caracteres.Acceso_Fichero;
-import Serializacion_objetos.ObjetoParaSerializar;
-import Serializacion_objetos.Serializador;
+import teststreams.escribirPorCaracteres.Escribir_Fichero;
+import teststreams.leyendoPorCaracteres.Acceso_Fichero;
+import teststreams.serializacionObjetos.ObjetoParaSerializar;
+import teststreams.serializacionObjetos.Serializador;
 
 public class Main {
     public static void main(String[] args) {

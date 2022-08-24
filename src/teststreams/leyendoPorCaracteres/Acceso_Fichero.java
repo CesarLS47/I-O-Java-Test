@@ -1,4 +1,4 @@
-package Leyendo_por_caracteres;
+package teststreams.leyendoPorCaracteres;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -10,7 +10,6 @@ public class Acceso_Fichero {
     private FileReader archivo_entrada;
 
     // Métodos
-
     private void AbrirArchivo(){
         try {
             archivo_entrada = new FileReader("C:/Users/Cesar/Desktop/nuevo1.txt");
@@ -22,7 +21,7 @@ public class Acceso_Fichero {
     }
 
     public void lee(){
-        AbrirArchivo();
+        this.AbrirArchivo();
 
         Scanner scanner_lineas = new Scanner(archivo_entrada);
 

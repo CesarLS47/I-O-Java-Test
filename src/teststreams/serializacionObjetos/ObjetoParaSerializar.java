@@ -1,4 +1,4 @@
-package Serializacion_objetos;
+package teststreams.serializacionObjetos;
 
 import java.io.*;
 

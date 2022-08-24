@@ -1,15 +1,13 @@
-package Escribiendo_por_caracteres;
+package teststreams.escribirPorCaracteres;
 
 import java.io.FileWriter;
 import java.io.IOException;
-
 
 public class Escribir_Fichero{
     // Atributos
     private FileWriter salida;
 
     // Métodos
-
     private void AbrirArchivo(){
         try {
             salida = new FileWriter("C:/Users/Cesar/Desktop/nuevo2.txt");
