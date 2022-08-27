@@ -6,28 +6,30 @@ import teststreams.serializacionObjetos.ObjetoParaSerializar;
 import teststreams.serializacionObjetos.Serializador;
 
 public class Main {
-    public static void main(String[] args) {
-        /*Leer un archivo como caracteres*/
-        //Acceso_Fichero leyendo = new Acceso_Fichero();
-        //leyendo.lee();
 
-        //Escribir en un archivo como caracteres
-        Escribir_Fichero escribiendo = new Escribir_Fichero();
-        escribiendo.escribe();
+  public static void main(String[] args) {
+    /*Leer un archivo como caracteres*/
+    //Acceso_Fichero leyendo = new Acceso_Fichero();
+    //leyendo.lee();
+
+    //Escribir en un archivo como caracteres
+    Escribir_Fichero escribiendo = new Escribir_Fichero();
+    escribiendo.escribe();
 
 
-        /* Serializacion */
-        // Objeto ejemplo para serializar, importante que el objeto implemente la interfaz "Serializable"
-        ObjetoParaSerializar objetoPruebaParaSerializar = new ObjetoParaSerializar();
+    /* Serializacion */
+    // Objeto ejemplo para serializar, importante que el objeto implemente la interfaz "Serializable"
+    ObjetoParaSerializar objetoPruebaParaSerializar = new ObjetoParaSerializar();
 
-        // Incluye los metodos para serializar un objeto a un archivo, y para des-serializarlo
-        Serializador serializador= new Serializador();
+    // Incluye los metodos para serializar un objeto a un archivo, y para des-serializarlo
+    Serializador serializador = new Serializador();
 
-        serializador.SerializarObjetoToArchivo(objetoPruebaParaSerializar);
-        ObjetoParaSerializar ObjetoPruebaDeserializado = serializador.DesSerializarArchivoToObjeto();
+    serializador.SerializarObjetoToArchivo(objetoPruebaParaSerializar);
+    ObjetoParaSerializar ObjetoPruebaDeserializado = serializador.DesSerializarArchivoToObjeto();
 
-        System.out.println("\n Los objetos coinciden en su datos? " + ObjetoPruebaDeserializado.equals(objetoPruebaParaSerializar));
-        System.out.println(ObjetoPruebaDeserializado);
+    System.out.println("\n Los objetos coinciden en su datos? " + ObjetoPruebaDeserializado.equals(
+        objetoPruebaParaSerializar));
+    System.out.println(ObjetoPruebaDeserializado);
 
-    }
+  }
 }
