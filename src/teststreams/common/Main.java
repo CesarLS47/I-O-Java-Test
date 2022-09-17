@@ -1,5 +1,6 @@
 package teststreams.common;
 
+import teststreams.buffers.Acceso_BufferedReader;
 import teststreams.escribirPorCaracteres.Escribir_Fichero;
 import teststreams.leyendoPorCaracteres.Acceso_Fichero;
 import teststreams.serializacionObjetos.ObjetoParaSerializar;
@@ -31,5 +32,8 @@ public class Main {
         objetoPruebaParaSerializar));
     System.out.println(ObjetoPruebaDeserializado);
 
+    // Leer un archivo mediante Buffer
+    Acceso_BufferedReader nueva_lectura = new Acceso_BufferedReader();
+    nueva_lectura.leer();
   }
 }
